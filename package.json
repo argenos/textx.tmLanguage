@@ -1,0 +1,41 @@
+{
+    "name": "textx",
+    "displayName": "textX Language",
+    "version": "0.1.0",
+    "publisher": "textX",
+    "description": "Support for the textx language: https://github.com/textx/",
+    "homepage": "https://github.com/argenos/textx.tmLanguage",
+    "author": "Argentina Ortega",
+    "engines": {
+      "vscode": "^1.76.0"
+    },
+    "license": "Apache 2.0",
+    "categories": [
+      "Programming Languages",
+      "Language Packs"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/argenos/textx.tmLanguage.git"
+    },
+    "contributes": {
+      "languages": [
+        {
+          "id": "textx",
+          "extensions": [
+            ".tx"
+          ],
+          "aliases": [
+            "textX",
+            "tx"
+          ],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [{
+        "language": "textx",
+        "scopeName": "source.textx",
+        "path": "./syntaxes/textx.json"
+      }]
+    }
+  }
